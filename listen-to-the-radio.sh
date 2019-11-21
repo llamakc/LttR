@@ -1,8 +1,17 @@
 #!/bin/sh
 clear;
 
-read -n 1 -p "What station would you like to listen to? (1=wvfs 2=wnyc 3=wtul
-q=quit " answer;
+read -n 1 -p "What station would you like to listen to? 
+
+1=WVFS 
+
+2=WNYC 
+
+3=WTUL
+
+q=quit
+
+==> ? " answer;
 
 clear;
 echo "         ****************************************"
