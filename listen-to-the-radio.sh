@@ -35,5 +35,7 @@ case $answer in
                 exec /usr/bin/firefox https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
       q|Q)
                 exit;;
+      *)
+                echo "*********That's not one of the options, but you can run again for another try*****";;
 
 esac
