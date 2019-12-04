@@ -26,7 +26,7 @@ echo "         ******************************************"
 
 case $answer in
       1)
-                mplayer http://voice.wvfs.fsu.edu:8000/stream;;
+                mplayer -cache 250 http://voice.wvfs.fsu.edu:8000/stream;;
       2)
                 mplayer -cache 250 http://fm939.wnyc.org/wnycfm;;
       3)
