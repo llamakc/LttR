@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
-
+#needs and if/else for $BROWSER to be sure you have that set, or exit otherwise
 clear;
 
 read -n 1 -p "What station would you like to listen to? 
