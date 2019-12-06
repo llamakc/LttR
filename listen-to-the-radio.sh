@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
-
+#needs and if/else for $BROWSER to be sure you have that set, or exit otherwise
 clear;
 
 read -n 1 -p "What station would you like to listen to? 
@@ -26,7 +26,7 @@ echo "         ******************************************"
 
 case $answer in
       1)
-                mplayer http://voice.wvfs.fsu.edu:8000/stream;;
+                mplayer -cache 250 http://voice.wvfs.fsu.edu:8000/stream;;
       2)
                 mplayer -cache 250 http://fm939.wnyc.org/wnycfm;;
       3)
@@ -35,5 +35,7 @@ case $answer in
                 exec /usr/bin/firefox https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
       q|Q)
                 exit;;
+      *)
+                echo "*********That's not one of the options, but you can run again for another try*****";;
 
 esac
