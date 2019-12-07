@@ -1,10 +1,9 @@
 #!/bin/bash
 
 #"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
-#needs and if/else for $BROWSER to be sure you have that set, or exit otherwise
 clear;
 
-read -n 1 -p "What station would you like to listen to? 
+read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
 
 1=WVFS 
 
@@ -12,7 +11,9 @@ read -n 1 -p "What station would you like to listen to?
 
 3=WTUL
 
-4=Other
+4=KEXP
+
+5=Other
 
 q=quit
 
@@ -32,7 +33,10 @@ case $answer in
       3)
                 mplayer -cache 250 http://129.81.156.83:8000/listen;;
       4)
-                exec /usr/bin/firefox https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
+                /usr/bin/xdg-open https://kexp.org/listen/;;
+      5)
+                /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
+
       q|Q)
                 exit;;
       *)
