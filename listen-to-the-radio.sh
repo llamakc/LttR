@@ -13,17 +13,32 @@ read -n 1 -p "What awesome college rock or NPR news station would you like to li
 
 4=KEXP
 
-5=Other
+5=WWNO
+
+6=Star Wars Episode IV
+
+7=Other
 
 q=quit
 
 ==> ? " answer;
 
 clear;
+
 echo ""
-echo "         ******************************************"
-echo "         **Alright here you go. Happy listening!!**"
-echo "         ******************************************"
+echo "           ,-----.                                           "
+echo "         ,'_/_|_\_`.                                         "
+echo "        /<<::8[O]::>\                                        "
+echo "       _|-----------|_                                       "
+echo "   :::|  | ====-=- |  |:::                                   "
+echo "   :::|  | -=-==== |  |:::                                   "
+echo "   :::\  | ::::|()||  /:::                                   "
+echo "   ::::| | ....|()|| |::::                                   "
+echo "       | |_________| |                                       "
+echo "       | |\_______/| |                                       "
+echo "      /   \ /   \ /   \       - Alright, here you go -       "
+echo "      `---' `---' `---'       -   Happy Listening!!  -       "
+echo ""
 
 case $answer in
       1)
@@ -35,7 +50,11 @@ case $answer in
       4)
                 /usr/bin/xdg-open https://kexp.org/listen/;;
       5)
-                /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
+                mplayer -cache 1500 -cache-min 50 https://tektite.streamguys1.com:5145/wwnolive;;
+      6)
+		/usr/bin/telnet towel.blinkenlights.nl;;
+      7)
+          /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
 
       q|Q)
                 exit;;
