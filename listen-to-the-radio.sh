@@ -5,19 +5,17 @@ clear;
 
 read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
 
-1=WVFS 
+1=WVFS
 
-2=WNYC 
+2=WTUL
 
-3=WTUL
+3=WNYC
 
-4=KEXP
+4=WWNO
 
-5=WWNO
+5=KEXP
 
-6=Star Wars Episode IV
-
-7=Other
+6=Other
 
 q=quit
 
@@ -44,18 +42,17 @@ case $answer in
       1)
                 mplayer -cache 250 http://voice.wvfs.fsu.edu:8000/stream;;
       2)
-                mplayer -cache 250 http://fm939.wnyc.org/wnycfm;;
-      3)
                 mplayer -cache 250 http://129.81.156.83:8000/listen;;
+      3)
+                mplayer -cache 250 http://fm939.wnyc.org/wnycfm;;
       4)
-                /usr/bin/xdg-open https://kexp.org/listen/;;
-      5)
                 mplayer -cache 1500 -cache-min 50 https://tektite.streamguys1.com:5145/wwnolive;;
-      6)
-		/usr/bin/telnet towel.blinkenlights.nl;;
+      5)
+                /usr/bin/xdg-open https://kexp.org/listen/;;
       7)
-          /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
-
+                /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
+      s|S)
+		/usr/bin/telnet towel.blinkenlights.nl;;
       q|Q)
                 exit;;
       *)
