@@ -15,7 +15,11 @@ read -n 1 -p "What awesome college rock or NPR news station would you like to li
 
 5=KEXP
 
-6=Other
+6=DR P6 Beat
+
+7=Dandelion Radio
+
+9=Other
 
 q=quit
 
@@ -24,18 +28,7 @@ q=quit
 clear;
 
 echo ""
-echo "           ,-----.                                           "
-echo "         ,'_/_|_\_`.                                         "
-echo "        /<<::8[O]::>\                                        "
-echo "       _|-----------|_                                       "
-echo "   :::|  | ====-=- |  |:::                                   "
-echo "   :::|  | -=-==== |  |:::                                   "
-echo "   :::\  | ::::|()||  /:::                                   "
-echo "   ::::| | ....|()|| |::::                                   "
-echo "       | |_________| |                                       "
-echo "       | |\_______/| |                                       "
-echo "      /   \ /   \ /   \       - Alright, here you go -       "
-echo "      `---' `---' `---'       -   Happy Listening!!  -       "
+echo "   -   Happy Listening!!  -       "
 echo ""
 
 case $answer in
@@ -49,7 +42,11 @@ case $answer in
                 mplayer -cache 1500 -cache-min 50 https://tektite.streamguys1.com:5145/wwnolive;;
       5)
                 /usr/bin/xdg-open https://kexp.org/listen/;;
+      6)
+                mplayer -cache 1500 -cache-min 50 http://live-icy.gslb01.dr.dk:80/A/A29H.mp3;;
       7)
+                mplayer -cache 250 -cache-min 25 http://stream.dandelionradio.com:9414;;
+      9)
                 /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
       s|S)
 		/usr/bin/telnet towel.blinkenlights.nl;;
