@@ -13,13 +13,13 @@ read -n 1 -p "What awesome college rock or NPR news station would you like to li
 
 4=WWNO (NPR New Orleans)
 
-5=KEXP (Portland)
+5=KEXP (Seatle)
 
-6=DR P6 Beat
+6=DR P6 Beat (Denmark)
 
-7=Dandelion Radio
+7=Dandelion Radio (London)
 
-9=KVRX (Texas)
+8=KVRX (Austin)
 
 q=quit
 
@@ -46,7 +46,7 @@ case $answer in
                 mplayer -cache 1500 -cache-min 50 http://live-icy.gslb01.dr.dk:80/A/A29H.mp3;;
       7)
                 mplayer -cache 250 -cache-min 25 http://stream.dandelionradio.com:9414;;
-      9)
+      8)
 	      	mplayer -cache 250 -cache-min 25 htt://path/to/stream;;
       s|S)
 		/usr/bin/telnet towel.blinkenlights.nl;;
