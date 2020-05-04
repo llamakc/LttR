@@ -5,21 +5,21 @@ clear;
 
 read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
 
-1=WVFS
+1=WVFS (Tallahassee)
 
-2=WTUL
+2=WTUL (New Orleans)
 
-3=WNYC
+3=WNYC (New York City)
 
-4=WWNO
+4=WWNO (NPR New Orleans)
 
-5=KEXP
+5=KEXP (Portland)
 
 6=DR P6 Beat
 
 7=Dandelion Radio
 
-9=Other
+9=KVRX (Texas)
 
 q=quit
 
@@ -47,7 +47,7 @@ case $answer in
       7)
                 mplayer -cache 250 -cache-min 25 http://stream.dandelionradio.com:9414;;
       9)
-                /usr/bin/xdg-open https://flypaper.soundfly.com/discover/10-of-the-most-influential-college-radio-stations-in-the-us/;;
+	      	mplayer -cache 250 -cache-min 25 htt://path/to/stream;;
       s|S)
 		/usr/bin/telnet towel.blinkenlights.nl;;
       q|Q)
