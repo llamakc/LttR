@@ -47,7 +47,7 @@ case $answer in
       7)
                 mplayer -cache 250 -cache-min 25 http://stream.dandelionradio.com:9414;;
       8)
-	      	mplayer -cache 250 -cache-min 25 htt://path/to/stream;;
+	      	mplayer -cache 250 -cache-min 25 http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream;;
       s|S)
 		/usr/bin/telnet towel.blinkenlights.nl;;
       q|Q)
