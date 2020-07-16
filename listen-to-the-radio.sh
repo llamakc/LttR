@@ -1,8 +1,8 @@
-#!/bin/bash
+!/bin/bash
  
 #"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
 touch ~/.lttr;
-chmod 755 ~/.lttr:
+chmod 755 ~/.lttr;
 clear;
  
 read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
