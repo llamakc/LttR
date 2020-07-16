@@ -1,16 +1,16 @@
 #!/bin/bash
-
+ 
 #"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
 touch ~/.lttr;
 chmod 755 ~/.lttr:
 clear;
-
+ 
 read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
-1=WVFS (Tallahassee)        2=WTUL (New Orleans)
-3=WNYC (NPR New York)       4=WWNO (NPR New Orleans)
-5=KEXP (Seatle)             6=DR P6 Beat (Denmark)
-7=Dandelion Radio (London)  8=KVRX (Austin)
-9=WFUV (Bronx, NY)          0=Last Station Played
+1=WVFS (Tallahassee)                            2=WTUL (New Orleans)
+3=WNYC (NPR New York)                           4=WWNO (NPR New Orleans)
+5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)
+7=Dandelion Radio (London)                      8=KVRX (Austin)
+9=WFUV (Bronx, NY)                              0=Last Station Played
 q=quit
 ==> ? " answer;
 
