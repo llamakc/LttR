@@ -1,6 +1,6 @@
-!/bin/bash
+#!/bin/bash
  
-#"listen-to-the-radio.sh" is a member of the quantifier consortium. All rights reserved
+#"listen-to-the-radio.sh" is a member of the //Quantifier//Consortium//. All rights reserved.
 touch ~/.lttr;
 chmod 755 ~/.lttr;
 clear;
