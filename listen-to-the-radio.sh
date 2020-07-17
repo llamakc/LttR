@@ -5,7 +5,7 @@ touch ~/.lttr;
 chmod 755 ~/.lttr;
 clear;
  
-read -n 1 -p "What awesome college rock or NPR news station would you like to listen to? 
+read -n 1 -p "Which college rock or NPR news station would you like to listen to? 
 1=WVFS (Tallahassee)                            2=WTUL (New Orleans)
 3=WNYC (NPR New York)                           4=WWNO (NPR New Orleans)
 5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)
@@ -46,6 +46,6 @@ case $answer in
       q|Q)
                 exit;;
       *)
-                echo "*********That's not one of the options, but you can run again for another try*****";;
+                echo "***>>> That's not one of the options, but you can run again for another try <<<***";;
 
 esac
