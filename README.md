@@ -7,7 +7,7 @@ LttR
 
 Here is a short script that lets you listen to one of a few streaming radio stations from the command line. Is it a configuration file? No. Is it an excuse to make a pull request? Yes.
 
-Fork the project and submit a pull request to have your favorite station considered for inclusion.
+Submit a pull request to have your favorite station considered for inclusion.
 
 Anyway, thanks for all the fish.
 
