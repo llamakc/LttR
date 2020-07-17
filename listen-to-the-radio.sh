@@ -9,7 +9,7 @@ read -n 1 -p "Which college rock or NPR news station would you like to listen to
 1=WVFS (Tallahassee)                            2=WTUL (New Orleans)
 3=WNYC (NPR New York)                           4=WWNO (NPR New Orleans)
 5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)
-7=Dandelion Radio (London)                      8=KVRX (Austin)
+7=WUOG Radio (Athens GA)                      8=KVRX (Austin)
 9=WFUV (Bronx, NY)                              0=Last Station Played
 q=quit
 ==> ? " answer;
@@ -36,7 +36,7 @@ case $answer in
       6)
                 echo "http://live-icy.gslb01.dr.dk:80/A/A29H.mp3" > ~/.lttr && mplayer -cache 1500 -cache-min 50 http://live-icy.gslb01.dr.dk:80/A/A29H.mp3;;
       7)
-                echo "http://stream.dandelionradio.com:9414" > ~/.lttr && mplayer -cache 250 -cache-min 25 http://stream.dandelionradio.com:9414;;
+                echo "http://stream.wuog.org:8000" > ~/.lttr && mplayer -cache 250 -cache-min 25 http://stream.wuog.org:8000;;
       8)
                 echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" > ~/.lttr && mplayer -cache 250 -cache-min 25 http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream;;
       9)
