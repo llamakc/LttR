@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/llamakc/LttR"><img src="http://quantifier.org/~brock/" align="center" /></a>  
+  <a href="https://github.com/llamakc/LttR"><img src="http://quantifier.org/~brock/lttr.png" align="center" /></a>  
 </p>
 <p align="center">
 
