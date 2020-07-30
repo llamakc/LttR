@@ -14,3 +14,5 @@ Anyway, thanks for all the fish.
 **ECCE HOMO!!!**
 
 Notepad was not used 
+
+This script depends on mplayer. Install using your distro's preferred package management system.
