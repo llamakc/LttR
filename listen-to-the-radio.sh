@@ -62,7 +62,7 @@ case $answer in
                 echo "##https://github.com/llamabr/Lttr" > /home/$USER/.lttr ;
                 echo "##Config file for the listen-to-the-radio music player" >> /home/$USER/.lttr;
                 echo "" >> /home/$USER/.lttr;
-                echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" >> /home/$USER/.lttr && mplayer -cache 250 -cache-min 25 http://tstv-stream.tsm.utexas.edu:8000/kv$
+                echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" >> /home/$USER/.lttr && mplayer -cache 250 -cache-min 25 http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream;;
       9)
                 echo "##https://github.com/llamabr/Lttr" > /home/$USER/.lttr ;
                 echo "##Config file for the listen-to-the-radio music player" >> /home/$USER/.lttr;
