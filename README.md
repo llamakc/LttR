@@ -5,9 +5,9 @@
 
 <h1>LttR</h1>
 
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Update the .dot file to reflect branding
+- [ ] Change the name of the file to lttr.sh
+- [ ] Create a run script
 
 Here is a short script that lets you listen to one of a few streaming radio stations from the command line. Is it a configuration file? No. Is it an excuse to make a pull request? Yes.
 
