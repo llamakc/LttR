@@ -1,6 +1,13 @@
 #!/bin/bash
  
 #"listen-to-the-radio.sh" is a member of the //Quantifier//Consortium//. All rights reserved.
+
+if ! [ -x "$(command -v mplayer)" ]; then
+  echo "Oh, no! This script requires that you have mplayer installed and available in your path. You should either install mplayer, or edit the script to include your preferred player. Exiting..." >&2
+  exit 1
+fi
+
+
 touch /home/$USER/.lttr;
 chmod 755 /home/$USER/.lttr;
 clear;
