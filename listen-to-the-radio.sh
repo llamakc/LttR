@@ -15,7 +15,7 @@ fi
 
 
 touch /home/$USER/.lttr;
-chmod 755 /home/$USER/.lttr;
+chmod -x /home/$USER/.lttr;
 clear;
  
 read -n 1 -p "Which college rock or NPR news station would you like to listen to? 
