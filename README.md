@@ -11,8 +11,17 @@ Submit a pull request to have your favorite station considered for inclusion.
 
 Anyway, thanks for all the fish.
 
+**TO DO LIST**
+
+- [x] Update the .dot file to reflect branding
+- [ ] Change the name of the file to lttr.sh
+- [ ] Create a run script
+
+
 **ECCE HOMO!!!**
 
 Notepad was not used 
+ 
+ **Runtime Dependencies**
 
-This script depends on mplayer. Install using your distro's preferred package management system.
+This script depends on mplayer. Install using your distro's preferred package management system. The script will error and instruct the user to install mplayer.
