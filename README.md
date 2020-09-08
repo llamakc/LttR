@@ -30,4 +30,4 @@ Notepad was not used
  
  **Runtime Dependencies**
 
-This script depends on mplayer. Install using your distro's preferred package management system. The script will error and instruct the user to install mplayer.
+This script depends on mpv. Install using your distro's preferred package management system. The script will error and instruct the user to install mpv.
