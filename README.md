@@ -30,4 +30,4 @@ Notepad was not used
  
  **Runtime Dependencies**
 
-This script depends on mpv. Install using your distro's preferred package management system. The script will error and instruct the user to install mpv.
+This script depends on <a href="https://github.com/mpv-player/mpv">mpv</a>. Install using your distro's preferred package management system. The script will error and instruct the user to install mpv.
