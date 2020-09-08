@@ -9,6 +9,12 @@ Here is a short script that lets you listen to one of a few streaming radio stat
 
 Submit a pull request to have your favorite station considered for inclusion.
 
+To use:
+```
+$ curl -o ~/lttr.sh https://raw.githubusercontent.com/llamakc/LttR/master/listen-to-the-radio.sh && chmod +x ~/lttr.sh
+$ ./lttr.sh
+```
+
 Anyway, thanks for all the fish.
 
 **TO DO LIST**
@@ -16,6 +22,7 @@ Anyway, thanks for all the fish.
 - [x] Update the .dot file to reflect branding
 - [ ] Change the name of the file to lttr.sh
 - [ ] Create a run script
+- [ ] Choose a license
 
 
 **ECCE HOMO!!!**
@@ -24,4 +31,4 @@ Notepad was not used
  
  **Runtime Dependencies**
 
-This script depends on mplayer. Install using your distro's preferred package management system. The script will error and instruct the user to install mplayer.
+This script depends on <a href="https://github.com/mpv-player/mpv">mpv</a>. Install using your distro's preferred package management system. The script will error and instruct the user to install mpv.
