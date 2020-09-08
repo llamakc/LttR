@@ -39,4 +39,4 @@ This script depends on <a href="https://github.com/mpv-player/mpv">mpv</a>. Inst
  
  **Contact**
  
- - **User IRC Channel**: ```#LttR`` on ```irc.freenode.net``` 
+ - **User IRC Channel**: ```#LttR``` on ```irc.freenode.net``` 
