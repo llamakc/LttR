@@ -22,6 +22,7 @@ Anyway, thanks for all the fish.
 - [x] Update the .dot file to reflect branding
 - [ ] Change the name of the file to lttr.sh
 - [ ] Create a run script
+- [ ] Choose a license
 
 
 **ECCE HOMO!!!**
