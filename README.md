@@ -32,3 +32,11 @@ Notepad was not used
  **Runtime Dependencies**
 
 This script depends on <a href="https://github.com/mpv-player/mpv">mpv</a>. Install using your distro's preferred package management system. The script will error and instruct the user to install mpv.
+
+ **License**
+ 
+ ```listen-to-the-radio.sh``` and ```LttR.sh``` are released unto LGPLv2.
+ 
+ **Contact**
+ 
+ - **User IRC Channel**: ```#LttR`` on ```irc.freenode.net``` 
