@@ -37,7 +37,7 @@ q=quit
 clear;
 
 echo ""
-echo " -- Happy Listening -- "
+echo " -- Happy Listening, $(whoami) -- "
 echo ""
 
 case $answer in
