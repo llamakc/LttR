@@ -13,6 +13,14 @@ if ! [ -x "$(command -v mpv)" ]; then
   exit 1
 fi
 
+
+# root check
+if whoami | grep -q '^root$'; then
+    echo "do not run media players (or really anything) as root"
+    echo "do not run media players (or really anything) as root $(date)" > /home/$USER/.lttr
+    exit
+fi
+
 touch /home/$USER/.lttr;
 chmod -x /home/$USER/.lttr;
 clear;
@@ -20,7 +28,7 @@ clear;
 read -n 1 -p "Which college rock or NPR news station would you like to listen to? 
 1=WVFS (Tallahassee)                            2=WTUL (New Orleans)
 3=WNYC (NPR New York)                           4=WWNO (NPR New Orleans)
-5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)
+5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)	
 7=WUOG Radio (Athens GA)                        8=KVRX (Austin)
 9=WFUV (Bronx, NY)                              0=Last Station Played
 q=quit
