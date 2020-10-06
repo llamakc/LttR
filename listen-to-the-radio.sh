@@ -4,21 +4,13 @@
 
 comment0="#EXTM3U"
 comment1="##https://github.com/llamakc/Lttr"
-comment2="##Config file for the listen-to-the-radio music player"
+comment2="##Config file for the listen-to-the-radio music player $(date)"
 ##two separate comments is annoying, but necessary, since not all versions of echo respect the newline parameter, or the -e flag
 
 
 if ! [ -x "$(command -v mpv)" ]; then
   echo "Oh, no! This script requires that you have mpv installed and available in your path. You should either install mpv, or edit the script to include your preferred player. Exiting..." >&2
   exit 1
-fi
-
-
-# root check
-if whoami | grep -q '^root$'; then
-    echo "do not run media players (or really anything) as root"
-    echo "do not run media players (or really anything) as root $(date)" > /home/$USER/.lttr
-    exit
 fi
 
 touch /home/$USER/.lttr;
@@ -28,7 +20,7 @@ clear;
 read -n 1 -p "Which college rock or NPR news station would you like to listen to? 
 1=WVFS (Tallahassee)                            2=WTUL (New Orleans)
 3=WNYC (NPR New York)                           4=WWNO (NPR New Orleans)
-5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)	
+5=KEXP (Seatle)                                 6=DR P6 Beat (Denmark)
 7=WUOG Radio (Athens GA)                        8=KVRX (Austin)
 9=WFUV (Bronx, NY)                              0=Last Station Played
 q=quit
@@ -37,12 +29,12 @@ q=quit
 clear;
 
 echo ""
-echo " -- Happy Listening, $(whoami) -- "
+echo " -- Happy Listening, $(whoami). The time and date right now is $(date) -- "
 echo ""
 
 case $answer in
       0)
-                mpv --cache=yes -playlist /home/$USER/.lttr;;
+                mpv --cache=yes --playlist=/home/$USER/.lttr;;
       1)
 		echo "$comment0" > /home/$USER/.lttr;
                 echo "" >> /home/$USER/.lttr;
