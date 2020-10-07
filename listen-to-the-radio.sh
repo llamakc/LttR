@@ -4,7 +4,7 @@
 
 comment0="#EXTM3U"
 comment1="##https://github.com/llamakc/Lttr"
-comment2="##Config file for the listen-to-the-radio music player"
+comment2="##Config file for the listen-to-the-radio music player $(date)"
 ##two separate comments is annoying, but necessary, since not all versions of echo respect the newline parameter, or the -e flag
 
 
@@ -29,12 +29,12 @@ q=quit
 clear;
 
 echo ""
-echo " -- Happy Listening -- "
+echo " -- Happy Listening, $(whoami). The time and date right now is $(date) -- "
 echo ""
 
 case $answer in
       0)
-                mpv --cache=yes -playlist /home/$USER/.lttr;;
+                mpv --cache=yes --playlist=/home/$USER/.lttr;;
       1)
 		echo "$comment0" > /home/$USER/.lttr;
                 echo "" >> /home/$USER/.lttr;
