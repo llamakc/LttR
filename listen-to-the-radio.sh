@@ -7,6 +7,7 @@ comment1="##https://github.com/llamakc/Lttr"
 comment2="##Config file for the listen-to-the-radio music player $(date)"
 ##two separate comments is annoying, but necessary, since not all versions of echo respect the newline parameter, or the -e flag
 
+#superfluous comment to try and merge this bih
 
 if ! [ -x "$(command -v mpv)" ]; then
   echo "Oh, no! This script requires that you have mpv installed and available in your path. You should either install mpv, or edit the script to include your preferred player. Exiting..." >&2
