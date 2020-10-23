@@ -14,8 +14,9 @@ if ! [ -x "$(command -v mpv)" ]; then
   exit 1
 fi
 
-touch /home/$USER/.lttr;
-chmod -x /home/$USER/.lttr;
+mkdir -m766 /home/$USER/.config/lttr/
+touch /home/$USER/.config/lttr/lttrrc;
+chmod +x /home/$USER/.config/lttr/lttrrc;
 clear;
  
 read -n 1 -p "Which college rock or NPR news station would you like to listen to?
@@ -37,105 +38,105 @@ echo ""
 
 case $answer in
       0)
-                mpv --cache=yes --playlist=/home/$USER/.lttr;;
+                mpv --cache=yes --playlist=/home/$USER/.config/lttr/lttrrc;;
       1)
 		echo " -- Now you're listinging to WVFS, Tallahassee FL. You don't have to, but you are -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WVFS Tallahassee" >> /home/$USER/.lttr;
-                echo "http://voice.wvfs.fsu.edu:8000/stream" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WVFS Tallahassee" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://voice.wvfs.fsu.edu:8000/stream" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://voice.wvfs.fsu.edu:8000/stream;;
       2)
 		echo " -- Now you're listinging to WTUL -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WTUL New Orleans" >> /home/$USER/.lttr;
-                echo "http://129.81.156.83:8000/listen" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WTUL New Orleans" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://129.81.156.83:8000/listen" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://129.81.156.83:8000/listen;;
       3)
 		echo " -- Now you're listinging to your local NPR station WNYC -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WNYC New York" >> /home/$USER/.lttr;
-                echo "http://fm939.wnyc.org/wnycfm" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WNYC New York" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://fm939.wnyc.org/wnycfm" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://fm939.wnyc.org/wnycfm;;
       4)
 		echo " -- Now you're listinging to your local NPR station WWNO -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WWNO New Orleans" >> /home/$USER/.lttr;
-                echo "https://tektite.streamguys1.com:5145/wwnolive" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WWNO New Orleans" >> /home/$USER/.config/lttr/lttrrc;
+                echo "https://tektite.streamguys1.com:5145/wwnolive" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes https://tektite.streamguys1.com:5145/wwnolive;;
       5)
 		echo " -- Now you're listinging to KEXP, Seatle -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, KEXP Seatle" >> /home/$USER/.lttr;
-                echo "http://live-mp3-128.kexp.org:8000/kexp128.mp3" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, KEXP Seatle" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://live-mp3-128.kexp.org:8000/kexp128.mp3" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://live-mp3-128.kexp.org:8000/kexp128.mp3;;
       6)
-		echo "$comment0" > /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
 		echo " -- Now you're listinging to DR P6 all the way from Denmark -- ";
 		echo " ";
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, DR P6 Denmark" >> /home/$USER/.lttr;
-                echo "http://live-icy.gslb01.dr.dk:80/A/A29H.mp3" >> /home/$USER/.lttr;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, DR P6 Denmark" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://live-icy.gslb01.dr.dk:80/A/A29H.mp3" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://live-icy.gslb01.dr.dk:80/A/A29H.mp3;;
       7)
 		echo " -- Now you're listinging to DFM. You can contribute at https://dfm.nu/ -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WUOG Athens" >> /home/$USER/.lttr;
-                echo "http://stereo.dfm.nu" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WUOG Athens" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://stereo.dfm.nu" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://stereo.dfm.nu;;
       8)
 		echo " -- Now you're listinging to KVRX, staying weird in Austin TX -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, KVRX Austin" >> /home/$USER/.lttr;
-                echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, KVRX Austin" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream;;
       9)
 		echo " -- Now you're listinging to WFUV, Straight Outta The Bronx! -- ";
 		echo " ";
-		echo "$comment0" > /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-                echo "$comment1" >> /home/$USER/.lttr ;
-                echo "$comment2" >> /home/$USER/.lttr;
-                echo "" >> /home/$USER/.lttr;
-		echo "#EXTINF:-1, WFUV New York" >> /home/$USER/.lttr;
-                echo "http://onair.wfuv.org/onair-hi" >> /home/$USER/.lttr;
+		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+                echo "$comment1" >> /home/$USER/.config/lttr/lttrrc ;
+                echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
+                echo "" >> /home/$USER/.config/lttr/lttrrc;
+		echo "#EXTINF:-1, WFUV New York" >> /home/$USER/.config/lttr/lttrrc;
+                echo "http://onair.wfuv.org/onair-hi" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://onair.wfuv.org/onair-hi;;
       s|S)
                 /usr/bin/telnet towel.blinkenlights.nl;;
