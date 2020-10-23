@@ -14,7 +14,7 @@ if ! [ -x "$(command -v mpv)" ]; then
   exit 1
 fi
 
-mkdir -p /home/$USER/.config/lttr/
+mkdir -m766 /home/$USER/.config/lttr/
 touch /home/$USER/.config/lttr/lttrrc;
 chmod +x /home/$USER/.config/lttr/lttrrc;
 clear;
