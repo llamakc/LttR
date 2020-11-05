@@ -14,7 +14,7 @@ if ! [ -x "$(command -v mpv)" ]; then
   exit 1
 fi
 
-mkdir -m766 /home/$USER/.config/lttr/
+mkdir -m700 -p /home/$USER/.config/lttr/
 touch /home/$USER/.config/lttr/lttrrc;
 chmod +x /home/$USER/.config/lttr/lttrrc;
 clear;
@@ -23,8 +23,6 @@ read -n 1 -p "Which college rock or NPR news station would you like to listen to
 1=WVFS (Tallahassee)		2=WTUL (New Orleans)
 3=WNYC (NPR New York)		4=WWNO (NPR New Orleans)
 5=KEXP (Seatle)			6=DR P6 Beat (Denmark)
-7=WUOG Radio (Athens GA)	8=KVRX (Austin)
-7=DFM (Amsterdam, NL)		8=KVRX (Austin)
 7=DFM (Amsterdam, NL)		8=KVRX (Austin)
 9=WFUV (Bronx, NY)		0=Last Station Played
 q=quit
@@ -34,11 +32,13 @@ clear;
 
 echo ""
 echo " -- Happy Listening, $(whoami). The time and date right now is $(date) -- "
-echo ""
 
 case $answer in
       0)
-                mpv --cache=yes --playlist=/home/$USER/.config/lttr/lttrrc;;
+                echo " -- LttR is now happily playing for you the last station you listened to --";
+                echo " --                  (Brought to you by Carl's Jr)                       --";
+		echo " ";
+		mpv --cache=yes --playlist=/home/$USER/.config/lttr/lttrrc;;
       1)
 		echo " -- Now you're listinging to WVFS, Tallahassee FL. You don't have to, but you are -- ";
 		echo " ";
