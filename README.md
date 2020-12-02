@@ -16,7 +16,9 @@ $ ./lttr.sh
 ```
 
 When available, Song and Artist information from ```icy-title``` using something like 
-```$ echo '{ "command": ["get_property_string", "filtered-metadata"] }' | socat - /tmp/mpvsocket | jq '.data' | sed 's/"{\\"icy-title\\":\\"//g' | sed 's/\\"}"//g' ```
+```
+$ echo '{ "command": ["get_property_string", "filtered-metadata"] }' | socat - /tmp/mpvsocket | jq '.data' | sed 's/"{\\"icy-title\\":\\"//g' | sed 's/\\"}"//g' 
+```
 
 Anyway, thanks for all the fish.
 
