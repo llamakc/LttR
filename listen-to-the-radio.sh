@@ -35,8 +35,9 @@ echo " -- Happy Listening, $(whoami). The time and date right now is $(date) -- 
 
 case $answer in
       0)
-                echo " -- For you $(whoami), LttR is now happily playing the last station you listened to ";
-                echo " --                      (Brought to you by Carl's Jr)                              ";
+
+                echo " -- LttR is now happily playing for you the last station you listened to --";
+                echo " --                  (Brought to you by Carl's Jr)                       --";
 		echo " ";
 		mpv --cache=yes --playlist=/home/$USER/.config/lttr/lttrrc;;
       1)
