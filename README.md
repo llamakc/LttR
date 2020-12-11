@@ -11,7 +11,7 @@ Submit a pull request to have your favorite station considered for inclusion.
 
 To use:
 ```
-$ curl -o lttr.sh https://raw.githubusercontent.com/llamakc/LttR/master/listen-to-the-radio.sh && chmod +x lttr.sh
+$ curl -o lttr.sh https://raw.githubusercontent.com/royalconqueso/LttR/master/lttr.sh && chmod +x lttr.sh
 $ ./lttr.sh
 ```
 
@@ -25,7 +25,7 @@ Anyway, thanks for all the fish.
 **TO DO LIST**
 
 - [x] Update the .dot file to reflect branding
-- [ ] Change the name of the file to lttr.sh
+- [x] Change the name of the file to lttr.sh
 - [x] Create a run script
 - [x] Choose a license
 
@@ -40,7 +40,7 @@ This script depends on <a href="https://github.com/mpv-player/mpv">mpv</a>. Inst
 
  **License**
  
- ```listen-to-the-radio.sh``` and ```LttR.sh``` are Copyright 2020 \\quantifier\\consortium\\
+ ```listen-to-the-radio.sh``` (deprecated) and ```lttr.sh``` are Copyright 2020 \\quantifier\\consortium\\
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
