@@ -11,7 +11,7 @@ Submit a pull request to have your favorite station considered for inclusion.
 
 To use:
 ```
-$ curl -o lttr.sh https://raw.githubusercontent.com/royalconqueso/LttR/master/lttr.sh && chmod +x lttr.sh
+$ curl -o lttr.sh https://raw.githubusercontent.com/llamakc/LttR/master/lttr.sh && chmod +x lttr.sh
 $ ./lttr.sh
 ```
 
