@@ -23,7 +23,7 @@ read -n 1 -p "Which college rock or NPR news station would you like to listen to
 1=WVFS (Tallahassee)		2=WTUL (New Orleans)
 3=WNYC (NPR New York)		4=WWNO (NPR New Orleans)
 5=KEXP (Seatle)			6=DR P6 Beat (Denmark)
-7=DFM (Amsterdam, NL)		8=KVRX (Austin)
+7=WUOG (Athens, GA)		8=KVRX (Austin)
 9=WFUV (Bronx, NY)		0=Last Station Played
 q=quit
 ==> ? " answer;
@@ -107,7 +107,7 @@ case $answer in
                 echo "http://live-icy.gslb01.dr.dk:80/A/A29H.mp3" >> /home/$USER/.config/lttr/lttrrc;
 		exec mpv --cache=yes http://live-icy.gslb01.dr.dk:80/A/A29H.mp3 --input-ipc-server=/tmp/mpvsocket;;
       7)
-		echo " -- Now you're listinging to DFM. You can contribute at https://dfm.nu/ -- ";
+		echo " -- Now you're listinging to WUOG, you TOWNIE  -- ";
 		echo " ";
 		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
@@ -115,8 +115,8 @@ case $answer in
                 echo "$comment2" >> /home/$USER/.config/lttr/lttrrc;
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WUOG Athens" >> /home/$USER/.config/lttr/lttrrc;
-                echo "http://stereo.dfm.nu" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://stereo.dfm.nu --input-ipc-server=/tmp/mpvsocket;;
+                echo "http://stream.wuog.org:8000" >> /home/$USER/.config/lttr/lttrrc;
+		exec mpv --cache=yes http://stream.wuog.org:8000 --input-ipc-server=/tmp/mpvsocket;;
       8)
 		echo " -- Now you're listinging to KVRX, staying weird in Austin TX -- ";
 		echo " ";
