@@ -39,7 +39,7 @@ case $answer in
                 echo " -- LttR is now happily playing for you the last station you listened to --";
                 echo " --                  (Brought to you by Carl's Jr)                       --";
 		echo " ";
-		mpv --cache=yes --playlist=/home/$USER/.config/lttr/lttrrc;;
+		mpv --pulse-buffer=500 --cache=yes --cache-pause --playlist=/home/$USER/.config/lttr/lttrrc;;
       1)
 		echo " -- Now you're listinging to WVFS, Tallahassee FL. You don't have to, but you are -- ";
 		echo " ";
@@ -50,7 +50,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WVFS Tallahassee" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://voice.wvfs.fsu.edu:8000/stream" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://voice.wvfs.fsu.edu:8000/stream --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://voice.wvfs.fsu.edu:8000/stream --input-ipc-server=/tmp/mpvsocket;;
       2)
 		echo " -- Now you're listinging to WTUL -- ";
 		echo " ";
@@ -61,7 +61,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WTUL New Orleans" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://129.81.156.83:8000/listen" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://129.81.156.83:8000/listen --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://129.81.156.83:8000/listen --input-ipc-server=/tmp/mpvsocket;;
       3)
 		echo " -- Now you're listinging to your local NPR station WNYC -- ";
 		echo " ";
@@ -72,7 +72,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WNYC New York" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://fm939.wnyc.org/wnycfm" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://fm939.wnyc.org/wnycfm --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://fm939.wnyc.org/wnycfm --input-ipc-server=/tmp/mpvsocket;;
       4)
 		echo " -- Now you're listinging to your local NPR station WWNO -- ";
 		echo " ";
@@ -83,7 +83,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WWNO New Orleans" >> /home/$USER/.config/lttr/lttrrc;
                 echo "https://tektite.streamguys1.com:5145/wwnolive" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes https://tektite.streamguys1.com:5145/wwnolive --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause https://tektite.streamguys1.com:5145/wwnolive --input-ipc-server=/tmp/mpvsocket;;
       5)
 		echo " -- Now you're listinging to KEXP, Seatle -- ";
 		echo " ";
@@ -94,7 +94,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, KEXP Seatle" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://live-mp3-128.kexp.org:8000/kexp128.mp3" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://live-mp3-128.kexp.org:8000/kexp128.mp3 --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://live-mp3-128.kexp.org:8000/kexp128.mp3 --input-ipc-server=/tmp/mpvsocket;;
       6)
 		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
 		echo " -- Now you're listinging to DR P6 all the way from Denmark -- ";
@@ -105,9 +105,9 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, DR P6 Denmark" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://live-icy.gslb01.dr.dk:80/A/A29H.mp3" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://live-icy.gslb01.dr.dk:80/A/A29H.mp3 --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://live-icy.gslb01.dr.dk:80/A/A29H.mp3 --input-ipc-server=/tmp/mpvsocket;;
       7)
-		echo " -- Now you're listinging to WUOG, you TOWNIE  -- ";
+		echo " -- Now you're listinging to WUOG. Who here is missing that Golden Bowl?  -- ";
 		echo " ";
 		echo "$comment0" > /home/$USER/.config/lttr/lttrrc;
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
@@ -116,7 +116,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WUOG Athens" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://stream.wuog.org:8000" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://stream.wuog.org:8000 --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://stream.wuog.org:8000 --input-ipc-server=/tmp/mpvsocket;;
       8)
 		echo " -- Now you're listinging to KVRX, staying weird in Austin TX -- ";
 		echo " ";
@@ -127,7 +127,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, KVRX Austin" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream --input-ipc-server=/tmp/mpvsocket;;
       9)
 		echo " -- Now you're listinging to WFUV, Straight Outta The Bronx! -- ";
 		echo " ";
@@ -138,7 +138,7 @@ case $answer in
                 echo "" >> /home/$USER/.config/lttr/lttrrc;
 		echo "#EXTINF:-1, WFUV New York" >> /home/$USER/.config/lttr/lttrrc;
                 echo "http://onair.wfuv.org/onair-hi" >> /home/$USER/.config/lttr/lttrrc;
-		exec mpv --cache=yes http://onair.wfuv.org/onair-hi --input-ipc-server=/tmp/mpvsocket;;
+		exec mpv --pulse-buffer=500 --cache=yes --cache-pause http://onair.wfuv.org/onair-hi --input-ipc-server=/tmp/mpvsocket;;
       s|S)
                 /usr/bin/telnet towel.blinkenlights.nl;;
       w|W)
