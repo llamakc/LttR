@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/llamakc/LttR"><img src="http://quantifier.org/~brock/lttr.png" align="center" /></a>  
+  <a href="https://github.com/llamakc/LttR"><img src="http://quantifier.org/brock/public_html/lttr.png" align="center" /></a>  
 </p>
 <p align="center">
 
@@ -19,7 +19,10 @@ When available, Song and Artist information from ```icy-title``` using something
 ```
 $ echo '{ "command": ["get_property_string", "filtered-metadata"] }' | socat - /tmp/mpvsocket | jq '.data' | sed 's/"{\\"icy-title\\":\\"//g' | sed 's/\\"}"//g' 
 ```
-
+As a shortcut, flags may be used to call specific stations. For example, to run station #1 (WVFS Tallahassee), from the CLI simply run:
+```
+$ lttr.sh -1
+```
 Anyway, thanks for all the fish.
 
 **TO DO LIST**
@@ -56,4 +59,4 @@ limitations under the License.
  
  **Contact**
  
- - **User IRC Channel**: ```#LttR``` on ```irc.freenode.net``` 
+ - **User IRC Channel**: ```#LttR``` on ```irc.libera.chat``` 
